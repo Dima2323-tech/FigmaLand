@@ -1,0 +1,90 @@
+.Parthners_Container{
+    display: flex;
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 63px;
+    max-width: 900px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    .Parthners_Content{
+        width: 100%;
+        .Parthners_Heading{
+            margin-bottom: 50px;
+
+            .Parthners_Heading_Label{
+
+                margin-bottom: 15px;
+
+                    span{
+                        font-weight: 400;
+                        font-size: 52px;
+                        line-height: 62px;
+                        letter-spacing: 0.2px;
+                        color: #fff;
+                    }
+            }
+            .Parthners_Heading_Text{
+                
+                    span{
+                        font-weight: 300;
+                        font-size: 20px;
+                        line-height: 30px;
+                        letter-spacing: 0.2px;
+                        color: #fff;
+                    }
+            }
+        }
+        .Parthners_Logos{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 50px 0;
+            padding: 0 35px;
+            .Parthners_Logo{
+                
+               
+               
+                    margin: 25px auto;
+                
+            }
+        }
+        .Parthners_Btn{
+
+            button{
+                padding: 16px 36px;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 25px;
+                letter-spacing: 0.2px;
+                color: #fff;
+                background: none;
+                transition: 0.7s;
+                &:hover{
+                    transition: 0.7s;
+                    background: white;
+                    color: black;
+                    
+                    border-radius: 15px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 611px) {
+    .Parthners_Heading_Text{
+        width: 570px;
+            
+    }
+}
+@media screen and (max-width: 610px) {
+    .Parthners_Heading_Text{
+        width: 349px;
+            
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .Parthners_Heading_Text{
+        width: 280px;
+            
+    }
+}

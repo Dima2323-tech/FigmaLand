@@ -1,0 +1,197 @@
+.UserProfile_Container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+    .ProccesLabel{
+        display: none;
+        position: fixed;
+        text-align: center;
+        align-items: center;
+        right: 10px;
+        top: 5%;
+        width: 250px;
+        height: 50px;
+
+        border: 2px solid rgb(71, 194, 14);
+        border-radius: 15px;
+        background-color: white;
+        .icon{
+            margin: 0 25px 0 15px;
+            color: green;
+            width: 25px;
+            height: 25px;
+        }
+        span{
+            margin: 0;
+            align-items: center;
+            color: green;
+            font-size: 16px;
+            font-weight: 500;
+            height: auto;
+        }
+
+        @keyframes start {
+            0% {transform: translateY(-100%); opacity: 0;}
+            100% {transform: translateY(0%);}
+            
+          }
+          
+          
+        
+        @keyframes end {
+            
+            0% {transform: translateY(0%); }
+            100% {transform: translateY(-100%); opacity: 0;}
+          }
+    }
+    .UserProfile_Content{
+        text-align: center;
+        width: 1000px;
+        height: auto;
+        background: #464343;
+        border-radius: 15px;
+        padding: 25px 0;
+
+        .UserProfile_Heading{
+            margin: 25px 0;
+
+            .UserProfile_Heading_Photo{
+                display: inline-block;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 2px solid white;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .UserProfile_Heading_NickName{
+                margin-top: 25px;
+                color: white;
+                font-size: 24px;
+            }
+        }
+
+
+        .UserProfile_Settings{
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            .UserProfile{
+                margin: 25px 0;
+                   
+                display: flex;
+                flex-direction: column;
+
+                span{
+                    color: white;
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+
+                input{
+                    border: none;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    border-radius: 15px;
+                    padding-left: 10px;
+                    color: #000842;
+                    outline: none;
+                    height:40px;
+                    width: 300px;
+                }
+
+            }
+        }
+
+        .Btns{
+            .Btn{
+                background-color: white;
+                box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.25);
+                border-radius: 32px;
+                border: none;
+                height: 53px;
+                transition: 0.6s;
+                margin-top: 40px;
+                transition: all 500ms ease-in;
+                width: 200px;
+
+                span{
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 26px;
+        
+                    /* identical to box height */
+        
+                    color: #222;
+                  }
+
+                  &:nth-last-child(2){
+                    margin: 0 15px;
+                }
+
+                  &:hover{
+                    background-color: rgba(33 , 123, 244 , 0%);
+                    color:rgba(33, 123, 244, 1);
+                    border: 1px solid #217BF4;
+                    transition: all 500ms ease-in;
+                    span{
+                      color: #217BF4;
+                      
+                    }
+                }
+                &:disabled{
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        .Btn_LogOut{
+            margin-top: 50px;
+            .LogOut{
+                color: red;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+
+                transition: all 200ms ease-in;
+                    &:hover{
+                        cursor: pointer;
+                        opacity: 0.5;
+                    }
+            }
+                span{
+
+                    a{
+                        color: red;
+                        text-decoration: none;
+                    }
+                }
+        }
+
+        .link_to_home{
+            text-align: center;
+            margin-top: 50px;
+            
+            .link{
+              text-decoration: none;
+              color: white;
+              
+              
+    
+              transition: all 200ms ease-in;
+              &:hover{
+                  color: rgba(239, 53, 174, 1);
+              }
+            }
+        }
+    }
+}

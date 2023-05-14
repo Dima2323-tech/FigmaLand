@@ -1,0 +1,243 @@
+.log_container{
+   
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    .log_content{
+
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+  
+      .log_form{
+  
+        .log_form_header{
+          margin-bottom: 52px ;
+  
+          .log_form_header_label{
+            margin-bottom: 22px;
+            span{
+              font-weight: 500;
+              font-size: 30px;
+              line-height: 45px;
+              color: white  ;
+            }
+          }
+          .log_form_header_text{
+            display: flex;
+            flex-flow: column;
+            span{
+
+              margin: 0;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              color: white;
+                
+              .link{
+                text-decoration: none;
+                color: red;
+                
+                transition: all 200ms ease-in;
+                &:hover{
+                    color: rgba(239, 53, 174, 1);
+                }
+              }
+            }
+          }
+        }
+        .log_inputsANDbtns{
+  
+          .log_input{
+            margin-bottom: 42px;
+            display: flex;
+            flex-flow: column;
+            
+            input{
+                height:40px;
+            }
+
+            .email_label , .password_label{
+              display: flex;
+              align-items: center;
+              margin-left: 0;
+              .icon{
+                color: white;
+                margin: 0 5px 5px 0
+              }
+            }
+            span , input , hr{
+              margin: 0 0 5px 0;
+            }
+            span{
+              font-weight: 500;
+              font-size: 13px;
+              line-height: 20px;
+  
+              /* identical to box height */
+  
+              color: white;
+            }
+            input{
+              border: none;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              border-radius: 15px;
+              padding-left: 10px;
+              /* identical to box height */
+  
+              color: #000842;
+              outline: none;
+            }
+          }
+          .email{
+            span{
+              display: flex;
+            }
+          }
+          .password{
+            span{
+              display: flex;
+            }
+          }
+          .log_btn{
+            background-color: white;
+            box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.25);
+            border-radius: 32px;
+            border: none;
+            height: 53px;
+            transition: 0.6s;
+            margin-top: 40px;
+            transition: all 500ms ease-in;
+            opacity: 0.3;
+            span{
+              font-weight: 500;
+              font-size: 17px;
+              line-height: 26px;
+  
+              /* identical to box height */
+  
+              color: #222;
+            }
+            &:hover{
+              background-color: rgba(33 , 123, 244 , 0%);
+              color:rgba(33, 123, 244, 1);
+              border: 1px solid #217BF4;
+              transition: all 500ms ease-in;
+              span{
+                color: #217BF4;
+                
+              }
+            }
+          }
+          
+        }
+        .link_to_home{
+          text-align: center;
+          margin-top: 10px;
+          
+          .link{
+            text-decoration: none;
+            color: white;
+            
+            
+
+            transition: all 200ms ease-in;
+            &:hover{
+                color: rgba(239, 53, 174, 1);
+            }
+          }
+        }
+        .log_Remember{
+          display: flex;
+          flex-direction: row-reverse;
+          span{
+            margin: 0 auto 0 0;
+            color: white;
+          }
+
+          input{
+            margin: 0 15px 0 0;
+          }
+        }
+      }
+      .log_photo{
+        padding: 130px 88px;
+        background: white;
+        border-radius: 15px;
+  
+        .log_photo_container{
+  
+          img{
+  
+            margin-bottom: 90px;
+          }
+  
+          .log_photo_text{
+            display: flex;
+            flex-flow: column;
+            .log_photo_text_heading{
+              margin: 0;
+              font-weight: 600;
+              font-size: 40px;
+              line-height: 60px;
+
+  
+              color: #222;
+
+              .Figma{
+                color: rgba(239, 53, 174, 1) ;
+              }
+
+              .Land{
+                color: rgba(67, 182, 255, 1);
+              }
+            }
+            .log_photo_text_label{
+              margin: 0;
+              font-weight: 300;
+              font-size: 20px;
+              line-height: 30px;
+              max-width: 600px;
+              /* identical to box height */
+  
+              color: #222;
+  
+  
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 1311px){
+    .log_form{
+      margin-right: 127px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 1312px) {
+    .log_photo{
+      display: none;
+    }
+    .log_form{
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: 460px) {
+    .log_btn{
+      width: 100%;
+    }
+    .log_form{
+      width: 400px;
+    }
+  }
+  @media screen and (max-width: 461px) {
+    .log_btn{
+      width: 65%;
+    }
+  }

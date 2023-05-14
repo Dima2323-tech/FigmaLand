@@ -1,0 +1,209 @@
+footer{
+    display: flex;
+    overflow-x: hidden;
+    .Footer_Content{
+        display: flex;
+        padding-top: 170px;
+        padding-bottom: 110px;
+        max-width: 1400px;
+        .Footer_Nav{
+            
+            nav{
+                display: flex;
+    
+                
+                ul{
+                   margin-right: 75px;
+                    span{
+                        color: #fff;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 30px;
+                        letter-spacing: 0.1px;
+                    }
+                    
+                    li{
+                        list-style-type: none;
+                            
+                            position: relative;
+                            cursor: pointer;
+                        a{
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            letter-spacing: 0.2px;
+                            color: #fff;
+                            text-decoration: none;
+                            transition: 1s;
+                        }
+                        &:hover{
+                            transition: 1s;
+                            color: rgba(239, 53, 174, 1);;
+                        }
+    
+                        &:after{
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            display: block;
+                            background: none repeat scroll 0 0 transparent;
+                            height: 2px;
+                            width: 0;
+                            background: rgba(67, 182, 255, 1);
+                            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                        }
+    
+                        &:hover::after{
+                            width: 100%; 
+                            left: 0;
+                        }
+                        
+                        &:not(:first-child){
+                            margin-top: 10px;
+                        }
+    
+                    }
+                    
+                }
+            }
+        }
+        .Footer_AboutUs{
+            
+            .Footer_AboutUs_Location{
+                display: flex;
+                align-items: center;
+                .Footer_About_Location_Logo{
+                    
+                    .icon_footer{
+                        margin: 0 0 0 0;
+                        color:  white;  
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 10px;
+                    }
+                }
+                .Footer_About_Location_Text{
+                    margin: 0 0 0 15px;
+                    span{
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 24px;
+    
+                        /* identical to box height, or 150% */
+                        letter-spacing: 0.2px;
+    
+                        /* light text */
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            .Footer_AboutUs_Phone{
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+    
+                .Footer_AboutUs_Phone_Logo{
+                    margin: 0;
+                    .icon_footer{
+                        margin: 0 0 0 0;
+                        color:  white;  
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 10px;
+                    }
+                }
+    
+                .Footer_AboutUs_Phone_Text{
+                    margin: 0 0 0 15px;
+                    span{
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 24px;
+    
+                        /* identical to box height, or 150% */
+                        letter-spacing: 0.2px;
+    
+                        /* light text */
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            
+            .Footer_AboutUs_Socials{
+                display: flex;
+                margin-top: 20px;
+                .Footer_AboutUs_Socials_Logo{
+                    margin: 0 15px 0 0;
+    
+                    .icon_footer{
+                        margin: 0 0 0 0;
+                        color:  white;  
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media  screen and (max-width:802px) {
+    .Footer_Content{
+      flex-direction: column;
+      
+      .Footer_AboutUs{
+        margin-top: 75px;
+      }
+      .Footer_Nav{
+
+        nav{
+            ul{
+                &:nth-child(3){
+                    margin-right: 0 ;
+                }
+                    
+            
+            }
+        }
+    }
+    }
+
+}
+@media screen and (min-width: 471px) {
+    .Footer_Nav{
+        nav{
+            ul{
+                li{
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
+@media  screen and (max-width: 470px) {
+    .Footer_Content{
+      flex-direction: column;
+      
+      .Footer_AboutUs{
+        margin-top: 75px;
+      }
+     .Footer_Nav{
+        margin-left: 0;
+        nav{
+            flex-direction: column;
+
+            ul{
+                margin: 75px 0 0 0;
+
+                li{
+                    margin: 0;
+                }
+            }
+        }
+     }
+    }
+
+}

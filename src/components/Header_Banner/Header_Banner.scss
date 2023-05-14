@@ -1,0 +1,146 @@
+.Header_Banner_Container{
+    display: flex;
+    text-align: center;
+    
+    overflow-x: hidden;
+    padding-bottom: 100px;
+    .Header_Banner_Content{
+        
+        .Header_Banner_UnderBannerText{
+            
+            padding-bottom: 60px;
+            span{
+                
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 400;
+                letter-spacing: 0.2px;
+                color: white;
+            }
+        }
+        
+        .Header_Bunner_BtnS{
+            padding: 35px 0;
+            
+            justify-content: center;
+            .btn{
+                display: inline-block;
+                text-decoration: none;
+            }
+            button , .btn{
+                padding: 16px 36px;
+                color: white;
+                background-color:rgba(24, 24, 24, 0);
+                border: 1px solid #fff;
+                transition: 0.7s;
+                
+                span{
+
+                    font-size: 17px;
+                    line-height: 25px;
+                    font-weight: 500;
+                    letter-spacing: 0.2px;
+                  
+                }
+                &:hover{
+                    transition: 0.7s;
+                    background: #4452FE;
+                    border-radius: 15px;
+                   
+                }
+            }
+        }
+        .Header_Bunner_Mockup{
+
+            margin: 0;
+           
+           
+           img{
+            width: 100%;
+           }
+           
+        }
+    }
+}
+@media screen and (min-width: 751px){
+    .Header_Banner_Container{
+
+        padding-top: 65px;
+
+        .Header_Banner_Label{
+
+            width: 700px;
+            padding-bottom: 20px ;
+    
+            span{
+               font-weight: 500;
+               font-size: 80px;
+               line-height: 88px; 
+               color: white;
+            }
+        }
+
+        .Header_Banner_UnderBannerText{
+            width: 582px;
+            
+         }
+    }
+    
+}
+@media screen and (max-width: 750px) {
+    .Header_Banner_Container{
+        padding-top: 0;
+        .Header_Banner_Label{
+
+            width: 300px;
+            padding-bottom: 20px ;
+
+            span{
+               font-weight: 400;
+               font-size: 52px;
+               line-height: 62px; 
+               color: white;
+               letter-spacing: 0.2px;
+            }
+        }
+
+        .Header_Banner_UnderBannerText{
+          
+            padding-bottom: 60px;
+            span{
+                
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 400;
+                letter-spacing: 0.2px;
+                color: white;
+            }
+        }
+    }
+}
+@media screen and (min-width: 400px) {
+    .Header_Banner_UnderBannerText{
+        width: 380px;
+     }
+     .Header_Bunner_BtnS{
+        button{
+            &:not(:first-child){
+                margin-left: 35px;
+            }
+        }
+       
+     }
+}
+@media screen and (max-width: 400px) {
+    .Header_Banner_UnderBannerText{
+        width: 279px;
+        
+     }
+     .Header_Bunner_BtnS{
+        flex-direction: column;
+        max-width: 50%;
+        button{
+            margin-top: 21px;
+        }
+     }
+}

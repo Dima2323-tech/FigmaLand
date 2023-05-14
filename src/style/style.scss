@@ -1,0 +1,213 @@
+@import url('https://fonts.cdnfonts.com/css/graphik');
+@import "../components/Header/Header.scss";
+@import "../components/Header_Banner/Header_Banner.scss";
+@import "../components/Features/Features.scss";
+@import "../components/Contents/Contents.scss";
+@import "../components/Gallery/Gallery.scss";
+@import "../components/Parthners/Parthners.scss";
+@import "../components/Testimonials/Testimonials.scss";
+@import "../components/Footer/Footer.scss";
+@import "../Pages/Auto/Auto.scss";
+@import "../Pages/Register/Register.scss";
+@import "../Pages/WelcomePage/WelcomePage.scss";
+@import "../Pages/UserProfile/UserProfile.scss";
+
+*{
+    margin: 0 auto; 
+    padding: 0;
+}
+
+body{
+    background: #181818;
+    margin: 0;
+    font-family: 'Graphik', sans-serif;
+
+}
+.VariableFonts_Container{
+  display: flex;
+  margin-top: 120px;
+  padding-top: 100px;
+  overflow-x: hidden;
+  .VariableFonts_Content{
+      display: flex;
+      align-items: center;
+      max-width: 1250px;
+     
+      border-radius: 33px ;
+
+      .VariableFonts_Main{
+          
+
+          .VariableFonts_Main_Text{
+              margin-bottom: 37px;
+                  span{
+                      font-weight: 400;
+                      font-size: 52px;
+                      line-height: 62px;
+                      letter-spacing: 0.2px;
+                      color: #fff;
+                  }
+          }
+
+          .VariableFonts_Main_Btn{
+
+              a{
+                  text-decoration: none;
+                  padding: 14px 46px;
+                  background: #2436fa;
+                  color:  #fff;;
+                  font-weight: 500;
+                  font-size: 17px;
+                  line-height: 25px;
+                  letter-spacing: 0.2px;
+                  border: none;
+                  transition: 0.7s;
+                  border-radius: 5px;
+                  &:hover{
+                      transition: 0.7s;
+                      background-color: white;
+                      color: black;
+                      border-radius: 15px;
+                  }
+              }
+          }
+      }
+      
+  }
+}
+@media screen and (min-width:1331px) {
+  .VariableFonts_Content{
+      background-color: rgba(52, 52, 52, 1);
+  }
+  .VariableFonts_Img12{
+      
+      background-image: url("../img/VariableFontsImg.png");
+      width: 581px;
+      height: 365px;
+      background-repeat: no-repeat;
+      border-radius: 0 0 20px;
+      
+  }
+
+  .VariableFonts_Main_Text{
+      width: 407px;
+      }
+}
+@media screen and (max-width: 1330px) {
+  .VariableFonts_Container{
+      background-color: #1E1E1E;
+          .VariableFonts_Content{
+          flex-direction: column;
+          text-align: center;
+
+          
+
+          .VariableFonts_Img12{
+              position: relative;
+              top: 3px;
+              img{
+                  
+                  width: 500px;
+                  height: 400px;
+                 
+              }
+          }
+      }   
+  }
+  .VariableFonts_Img12{
+      margin-top: 79px;
+      text-align: center;
+      background-position: center;
+      background-image: url("../img/FontsAdaptive.png");
+      width: 541px;
+      height: 387px;
+      background-repeat: no-repeat;
+      
+      
+  }
+}
+@media screen and (min-width: 601px) {
+  .VariableFonts_Main{
+      margin: 0 86px 0 94px;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .VariableFonts_Img12{
+      
+     margin: 79px 0 0 0;
+     width: 350px
+      
+      
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .VariableFonts_Main_Text{
+      width: 250px;
+      
+  }
+
+  .VariableFonts_Img12{
+      
+     margin: 79px 0 0 0;
+     width: 350px
+      
+      
+  }
+}
+
+@media screen and (max-width: 370px) {
+
+  .VariableFonts_Main_Text{
+      width: 250px;
+      
+  }
+
+  .VariableFonts_Img12{
+      
+     margin: 79px 0 0 0;
+     width: 300px
+      
+      
+  }
+}
+.arrow_container{
+    position: fixed;
+    right: 10px;
+    top: 90%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background: #333030;
+    border-radius: 50px;
+    
+    .arrow_content{
+      
+      .arrow {
+
+        span {
+          display: block;
+          width: 15px;
+          height: 15px;
+          border-bottom: 5px solid #ffffff;
+          border-right: 5px solid #ffffff;
+          transform: rotate(225deg);
+          margin-top: 35%;
+          transition: all 500ms ease-in-out;
+        }
+      }
+    }
+    &:hover{
+      
+        &:hover span{
+            transition: all 500ms ease-in-out;
+            border-bottom: 5px solid rgba(239, 53, 174, 1);
+            border-right: 5px solid rgba(67, 182, 255, 1);
+
+        }
+    }
+  }
+  
+
